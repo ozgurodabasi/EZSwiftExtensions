@@ -6,6 +6,7 @@
 //  Copyright (c) 2015 Goktug Yilmaz. All rights reserved.
 //
 
+import UIKit
 import Foundation
 
 extension Int {

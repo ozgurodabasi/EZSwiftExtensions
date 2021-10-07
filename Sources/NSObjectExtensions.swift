@@ -8,6 +8,9 @@
 
 #if os(iOS) || os(tvOS)
 
+import UIKit
+import Foundation
+
 extension NSObject {
     public var className: String {
         return type(of: self).className

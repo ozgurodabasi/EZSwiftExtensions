@@ -6,6 +6,7 @@
 //  Copyright (c) 2015 Goktug Yilmaz. All rights reserved.
 //
 
+import UIKit
 import Foundation
 
 /// EZSE: This Date Formatter Manager help to cache already created formatter in a synchronized Dictionary to use them in future, helps in performace improvement.

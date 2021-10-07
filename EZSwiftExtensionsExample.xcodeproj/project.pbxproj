@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF720FBD270F004D00BEEFE1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF720FBC270F004D00BEEFE1 /* UIKit.framework */; };
+		BF720FBF270F005300BEEFE1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF720FBE270F005300BEEFE1 /* Foundation.framework */; };
+		BF720FC1270F126700BEEFE1 /* SynchronizedDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF720FC0270F126700BEEFE1 /* SynchronizedDictionary.swift */; };
+		BF720FC3270F127800BEEFE1 /* TimePassed.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF720FC2270F127800BEEFE1 /* TimePassed.swift */; };
 		C85840ED1C43B05200595696 /* URLExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85840EC1C43B05200595696 /* URLExtensions.swift */; };
 		E10A79321D6F2ED700735549 /* UIApplicationExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10A79311D6F2ED700735549 /* UIApplicationExtensions.swift */; };
 		E10A79371D6F4BDB00735549 /* UITextFieldExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10A79361D6F4BDB00735549 /* UITextFieldExtensions.swift */; };
@@ -64,6 +68,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BF720FBC270F004D00BEEFE1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		BF720FBE270F005300BEEFE1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		BF720FC0270F126700BEEFE1 /* SynchronizedDictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SynchronizedDictionary.swift; path = Sources/SynchronizedDictionary.swift; sourceTree = SOURCE_ROOT; };
+		BF720FC2270F127800BEEFE1 /* TimePassed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TimePassed.swift; path = Sources/TimePassed.swift; sourceTree = SOURCE_ROOT; };
 		C85840EC1C43B05200595696 /* URLExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = URLExtensions.swift; path = Sources/URLExtensions.swift; sourceTree = SOURCE_ROOT; };
 		E10A79311D6F2ED700735549 /* UIApplicationExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIApplicationExtensions.swift; path = Sources/UIApplicationExtensions.swift; sourceTree = SOURCE_ROOT; };
 		E10A79361D6F4BDB00735549 /* UITextFieldExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UITextFieldExtensions.swift; path = Sources/UITextFieldExtensions.swift; sourceTree = SOURCE_ROOT; };
@@ -127,6 +135,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF720FBD270F004D00BEEFE1 /* UIKit.framework in Frameworks */,
+				BF720FBF270F005300BEEFE1 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,6 +162,7 @@
 				E17878211C867EAB00BC05AA /* CharacterExtensions.swift */,
 				E1839E101BF79974002212C6 /* DateExtensions.swift */,
 				E1839E0D1BF79974002212C6 /* DictionaryExtensions.swift */,
+				BF720FC2270F127800BEEFE1 /* TimePassed.swift */,
 				E1CB3C1B1C25FFA000DF77CD /* DoubleExtensions.swift */,
 				E15484E31CA2BD00003B030E /* ErrorTypeExtensions.swift */,
 				E1839E0E1BF79974002212C6 /* EZSwiftFunctions.swift */,
@@ -163,6 +174,7 @@
 				E1839E121BF79974002212C6 /* StringExtensions.swift */,
 				E17878131C86525300BC05AA /* TimerExtensions.swift */,
 				E17878191C86770E00BC05AA /* UIAlertControllerExtensions.swift */,
+				BF720FC0270F126700BEEFE1 /* SynchronizedDictionary.swift */,
 				E10A79311D6F2ED700735549 /* UIApplicationExtensions.swift */,
 				E1D7CDCD1CF8FFB3008E4C07 /* UIBarButtonItemExtensions.swift */,
 				E1839E131BF79974002212C6 /* UIButtonExtensions.swift */,
@@ -189,11 +201,21 @@
 			name = Sources;
 			sourceTree = "<group>";
 		};
+		BF720FBB270F004D00BEEFE1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BF720FBE270F005300BEEFE1 /* Foundation.framework */,
+				BF720FBC270F004D00BEEFE1 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E1839DAC1BF79335002212C6 = {
 			isa = PBXGroup;
 			children = (
 				E1839DB71BF79335002212C6 /* EZSwiftExtensionsExample */,
 				E1839DB61BF79335002212C6 /* Products */,
+				BF720FBB270F004D00BEEFE1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -260,6 +282,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -336,8 +359,10 @@
 				E1839E1F1BF79974002212C6 /* BlockButton.swift in Sources */,
 				E1839E311BF79974002212C6 /* UIColorExtensions.swift in Sources */,
 				E10A79371D6F4BDB00735549 /* UITextFieldExtensions.swift in Sources */,
+				BF720FC1270F126700BEEFE1 /* SynchronizedDictionary.swift in Sources */,
 				E17878161C86525B00BC05AA /* NSAttributedStringExtensions.swift in Sources */,
 				E1839E251BF79974002212C6 /* BlockWebView.swift in Sources */,
+				BF720FC3270F127800BEEFE1 /* TimePassed.swift in Sources */,
 				E1839E231BF79974002212C6 /* BlockSwipe.swift in Sources */,
 				E1839E221BF79974002212C6 /* BlockPinch.swift in Sources */,
 				E1839E2E1BF79974002212C6 /* StringExtensions.swift in Sources */,

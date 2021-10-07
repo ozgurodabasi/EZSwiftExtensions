@@ -36,3 +36,14 @@ public class SynchronizedDictionary <Key: Hashable, Value> {
         return dict.has(key)
     }
 }
+
+
+
+
+
+
+
+
+
+
+

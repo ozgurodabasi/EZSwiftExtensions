@@ -6,6 +6,7 @@
 //  Copyright © 2015 Goktug Yilmaz. All rights reserved.
 //
 
+import UIKit
 import Foundation
 
 precedencegroup PowerPrecedence { higherThan: MultiplicationPrecedence }

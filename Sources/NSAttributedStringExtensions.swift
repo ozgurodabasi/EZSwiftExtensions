@@ -8,6 +8,9 @@
 
 #if os(iOS) || os(tvOS)
 
+import UIKit
+import Foundation
+
 extension NSAttributedString {
     /// EZSE: Adds bold attribute to NSAttributedString and returns it
 

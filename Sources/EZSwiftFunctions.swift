@@ -8,6 +8,7 @@
 
 //TODO: others standart video, gif
 
+import UIKit
 import Foundation
 
 public struct ez {
